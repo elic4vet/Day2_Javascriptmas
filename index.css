@@ -1,0 +1,63 @@
+* {
+
+    /*Color Palette */
+    --background-color: #F2F2F2;
+    --green-color: #758C5E;
+    --christmas-green: #2A593B;
+    --cherry-red: #8C031C;
+    --christmas-red: #D9042B;
+    --vibrant-red: #F20519;
+    --beige-color:#F2E6D0;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--background-color) ; 
+    margin-top: 20px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-top: 50px;
+    color: var(--christmas-red);
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--christmas-green);
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:  var(--cherry-red);
+    border-radius: 20px;
+}
+
+.calendar-box {
+    background-color: var(--christmas-green);
+    color: var(--background-color);
+    font-size: 8px;
+    text-align: left;
+    padding: 2px;
+    border: 1px dashed  var(--cherry-red)
+}
+
+.calendar-box p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
